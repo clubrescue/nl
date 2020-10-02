@@ -1,5 +1,5 @@
 # Project information
-site_name: IT Suite voor non profits | C.R Docs
+site_name: C.R Docs
 site_url: http://clubrescue.github.io/crdocs-nl
 site_author: Ruud Borghouts
 site_description: >-
@@ -10,7 +10,7 @@ site_description: >-
 # Repository
 repo_name: clubrescue/crdocs-nl
 repo_url: https://github.com/clubrescue/crdocs-nl
-#edit_uri: ""
+edit_uri: edit/dev/docs/
 
 # Copyright
 copyright: Copyright &copy; 2017 Ruud Borghouts, CC BY-SA 4.0.
@@ -36,11 +36,11 @@ theme:
   palette:
     scheme: default
     primary: light blue
-    accent: indigo
+    accent: amber
   font:
     text: Roboto
     code: Roboto Mono
-  favicon: assets/favicon.png
+  favicon: assets/favicon.ico
   icon:
     logo: logo
 
@@ -50,6 +50,10 @@ plugins:
   #- redirects:
   - minify:
       minify_html: true
+  #- mermaid2
+
+extra_javascript:
+  - assets/js/mermaid.min.js
 
 # Customization
 extra:
@@ -93,7 +97,7 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+          format: !!python/name:pymdownx.superfences.fence_div_format
   - pymdownx.tabbed
   - pymdownx.tasklist:
       custom_checkbox: true
@@ -101,13 +105,34 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - ITSuite4NP: http://clubrescue.github.io/crdocs
-  - Club.Rescue:
-    - Releases: index.md
-    - Modules: index.md
-    - Generaties: index.md
-    - Privacy vriendelijk gebruik van Sportlink: index.md
-    - Werkinstructie installatie en configuratie: index.md
-    - Autorisatie concept: index.md
-    - Wijzigingen beheer database: index.md
-    - Vacatures core en module developers: index.md
+  - Home: http://clubrescue.github.io
+  - Club.Redders:
+    - Tooling: clubrescue/tooling.md
+    - Releases: clubrescue/releases.md
+    - Generaties: clubrescue/generations.md
+    - AVG: clubrescue/privacy.md
+  - Installatie:
+    - Installatie 1: installation/index.md
+    - Installatie 2: installation/installation.md
+  - Modules:
+    - Mijn C.R:
+      - Mijn C.R: modules/mycr.md
+      - Mijn C.R-WP: modules/mycr-wp.md
+    - Ledenadministratie: modules/membermanagement.md
+    - Competenties: modules/diplomamanagement.md
+    - Weekroosters: modules/customscheduling.md
+    - Maillijsten: modules/mailinglists.md
+    - Contributie: modules/contribution.md
+    - Boekhouding: modules/accounting.md
+    - PDF-merger: modules/pdfmerger.md
+    - Data imports: modules/import.md
+    - SDEM (modules): modules/sdem.md
+    - Beheer: modules/admin.md
+  - End-user instructions:
+    - End-user instructions: end-users.md
+    #Gebruik de FQDN anders blijft het menu ook vanuit modules hier hangen.
+    #- Mijn C.R: modules/mycr.md
+    #- Weekroosters: modules/customscheduling.md
+    #- Competenties: modules/diplomamanagement.md
+    #- Aanzetten MFA: https://clubrescue.github.io/collaborationsuite/office365mfa
+    #- O365 Groepenbeheer: https://clubrescue.github.io/collaborationsuite/office365groupmanagement
