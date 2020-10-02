@@ -1,5 +1,11 @@
 {% extends "base.html" %}
 
+{% block tabs %}
+  {% if "tabs" in config.theme.features %}
+    {% include "partials/tabs.html" %}
+  {% endif %}
+{% endblock %}
+
 {% block scripts %}
   <script src="{{ 'assets/js/vendor.min.js' | url }}"></script>
   <script src="{{ 'assets/js/bundle.min.js' | url }}"></script>
