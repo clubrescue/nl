@@ -66,3 +66,30 @@ hier geen toestemming voor is gegeven! Wederom een belangrijk argument daar zo m
 
 Toelichten op vergelijken ledenbestand en automatisch doorvoeren wijzigen in CR of handmatig in de ledenadministratie van de bond. Wijs er op dat bij de 1e je vertrouwd op gegevens die 3de kunnen wijzigen en bij
 de 2e op je eigen administratie en wat leden jouw vertellen!
+
+### Bijlage: Op welke plaatsen dienen rechten ingeregeld te worden?
+
+Uitgaande van onderstaande tooling is toegang noodzakelijk voor;
+
+| **Tooling**           | **Accout**            | **Toegang nodig voor** | **Rechten krijg je door**         |
+|-----------------------|-----------------------|------------------------|-----------------------------------|
+| Office 365 / Azure AD | Intern account        | Alle leden             | Work in progress                  |
+| Club.Redders (ResQ)   | O365-account (SSO)    | \-                     | Work in progress                  |
+| WordPress             | O365-account (SSO)    | \-                     | Automatisch                       |
+| MachForm              | Intern account        | Kader leden            | Work in progress                  |
+| Akounting             | Intern account        | Bestuur + Kascommissie | Work in progress                  |
+| *Systeem van de bond* | Intern account        | Bestuur                | Handmatig via bestuur             |
+| KeeWeb                | Geen account          | Vrij toegankelijk      | n.v.t.                            |
+| Webhosting            | Div. interne accounts | Functionaris IT        | Handmatig via andere functionaris |
+| Domeinregistratie     | Intern account        | Bestuur                | LastPass/KeePass van het bestuur  |
+
+Momenteel wordt er gewerkt om alle rechten automatisch toe te laten kennen. Dit
+geld straks voor al onze systemen m.u.v. het systeem van de bond, webhosting,
+domeinregistratie en LastPass. De overige systemen werken straks met één account
+en zodra je lid bent wordt je account dan automatisch aangemaakt. Een bestuurder
+kan vervolgens zelf aangeven welke rechten nodig zijn.
+
+Tot die tijd dienen voor deze systemen rechten aangevraagd te worden bij de
+functionaris IT, m.u.v. het het systeem van de bond. Die rechten dienen door het
+bestuur te worden toegekend en toegang is dan ook enkel nodig binnen het bestuur
+zelf.
