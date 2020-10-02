@@ -106,33 +106,48 @@ markdown_extensions:
 # Page tree
 nav:
   - Home: http://clubrescue.github.io
+  - IT Suite for NP:
+    - Introduction: itsuitefornonprofits/index.md
+    - High level view: itsuitefornonprofits/highlevelview.md
+    - Components: itsuitefornonprofits/components.md
+    - Cost estimate: itsuitefornonprofits/costestimate.md
   - Club.Redders:
     - Tooling: clubrescue/tooling.md
     - Releases: clubrescue/releases.md
     - Generaties: clubrescue/generations.md
     - AVG: clubrescue/privacy.md
-  - Installatie:
-    - Installatie 1: installation/index.md
-    - Installatie 2: installation/installation.md
-  - Modules:
+  - C.R Installatie:
+    - Installatie 1: clubrescue/installation/index.md
+    - Installatie 2: clubrescue/installation/installation.md
+  - C.R Modules:
     - Mijn C.R:
-      - Mijn C.R: modules/mycr.md
-      - Mijn C.R-WP: modules/mycr-wp.md
-    - Ledenadministratie: modules/membermanagement.md
-    - Competenties: modules/diplomamanagement.md
-    - Weekroosters: modules/customscheduling.md
-    - Maillijsten: modules/mailinglists.md
-    - Contributie: modules/contribution.md
-    - Boekhouding: modules/accounting.md
-    - PDF-merger: modules/pdfmerger.md
-    - Data imports: modules/import.md
-    - SDEM (modules): modules/sdem.md
-    - Beheer: modules/admin.md
-  - End-user instructions:
-    - End-user instructions: end-users.md
-    #Gebruik de FQDN anders blijft het menu ook vanuit modules hier hangen.
-    #- Mijn C.R: modules/mycr.md
-    #- Weekroosters: modules/customscheduling.md
-    #- Competenties: modules/diplomamanagement.md
-    #- Aanzetten MFA: https://clubrescue.github.io/collaborationsuite/office365mfa
-    #- O365 Groepenbeheer: https://clubrescue.github.io/collaborationsuite/office365groupmanagement
+      - Mijn C.R: clubrescue/modules/mycr.md
+      - Mijn C.R-WP: clubrescue/modules/mycr-wp.md
+    - Ledenadministratie: clubrescue/modules/membermanagement.md
+    - Competenties: clubrescue/modules/diplomamanagement.md
+    - Weekroosters: clubrescue/modules/customscheduling.md
+    - Maillijsten: clubrescue/modules/mailinglists.md
+    - Contributie: clubrescue/modules/contribution.md
+    - Boekhouding: clubrescue/modules/accounting.md
+    - PDF-merger: clubrescue/modules/pdfmerger.md
+    - Data imports: clubrescue/modules/import.md
+    - SDEM (modules): clubrescue/modules/sdem.md
+    - Beheer: clubrescue/modules/admin.md
+  - Collaboration suite:
+    - Suites: collaborationsuite/index.md
+    - Office 365: collaborationsuite/office365.md
+    - End-user instructions:
+      - Turning on MFA (O365): collaborationsuite/office365mfa.md
+      - Group management (O365): collaborationsuite/office365groupmanagement.md
+  - Form editor:
+    - Form editors: formeditor/index.md
+    - MachForm: formeditor/machform.md
+  - Site editor:
+    - Site editors: siteeditor/index.md
+    - WordPress: siteeditor/wordpress.md
+  - About us:
+    - About: aboutus/index.md
+    - Repositories: https://github.com/clubrescue
+    - Vacancies: aboutus/vacancies.md
+  #- End-user instructions:
+      #- End-user instructions: end-users.md
